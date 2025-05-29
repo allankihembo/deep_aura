@@ -11,6 +11,8 @@ import re
 
 # Initialize Dash app with Bootstrap CSS for badges and styling
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
+
 
 # Global storage for uploaded dataframe (in memory for simplicity)
 uploaded_df = {'data': None}
